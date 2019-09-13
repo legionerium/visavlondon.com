@@ -1,0 +1,154 @@
+.audiojs audio{
+    position:absolute;
+    left:-1px;
+}
+.audiojs{
+    width:330px;
+    height: 40px;
+    font-family:monospace;
+    font-size:12px;
+    padding:2px 10px;
+    background:#f8f8f8;
+    position:relative;
+}
+.audiojs:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    border-bottom: 10px solid #f8f8f8;
+    border-top: 10px solid transparent;
+    border-right: 5px solid #f8f8f8;
+    border-left: 5px solid transparent;
+}
+.audiojs .play-pause{
+    width:25px;
+    float:left;
+    overflow:hidden;
+}
+.audiojs p{
+    display:none;
+    width:25px;
+    height:40px;
+    margin:0px;
+    cursor:pointer;
+}
+.audiojs .play{
+    display:block;
+}
+.audiojs .scrubber{
+    position:relative;
+    float:left;
+    width:200px;
+    background:#e7e9ee;
+    height: 2px;
+    margin: 18px 0 18px 10px;
+    border:0;
+    overflow:hidden;
+}
+.audiojs .progress{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:14px;
+    width:0px;
+    background:#ccc;
+    z-index:1;
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ccc), color-stop(0.5, #ddd), color-stop(0.51, #ccc), color-stop(1, #ccc));
+    background-image:-moz-linear-gradient(center top, #ccc 0%, #ddd 50%, #ccc 51%, #ccc 100%);
+}
+.audiojs .loaded{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:14px;
+    width:0px;
+    background:#000;
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.5, #333), color-stop(0.51, #222), color-stop(1, #222));
+    background-image:-moz-linear-gradient(center top, #222 0%, #333 50%, #222 51%, #222 100%);
+}
+.audiojs .time{
+    float:left;
+    height:36px;
+    line-height:36px;
+    margin:0px 0px 0px 6px;
+    padding:0px 6px 0px 12px;
+    color:#252e40;
+    font-size:16px;
+}
+.audiojs .time em{
+    padding:0px 2px 0px 0px;
+    color:#252e40;
+    font-size:16px;
+    font-style:normal;
+}
+.audiojs .time .duration{
+    display:none;
+}
+.audiojs .error-message{
+    float:left;
+    display:none;
+    margin:0px 10px;
+    height:36px;
+    width:400px;
+    overflow:hidden;
+    line-height:36px;
+    white-space:nowrap;
+    color:#fff;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    -icab-text-overflow:ellipsis;
+    -khtml-text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    -webkit-text-overflow:ellipsis;
+}
+.audiojs .error-message a{
+    color:#eee;
+    text-decoration:none;
+    padding-bottom:1px;
+    border-bottom:1px solid #999;
+    white-space:wrap;
+}
+.audiojs .play{
+    background:url("../img/play.png") no-repeat center;
+    height: 18px;
+    width: 14px;
+    margin: 10px;
+}
+.audiojs .pause{
+    background:url("../img/pause.png") no-repeat center / 100%;
+    height: 18px;
+    width: 14px;
+    margin: 10px;
+}
+.playing .play, .playing .loading, .playing .error{
+    display:none;
+}
+.playing .pause{
+    display:block;
+}
+.loading .play, .loading .pause, .loading .error{
+    display:none;
+}
+.loading .loading{
+    display:block;
+}
+.error .time, .error .play, .error .pause, .error .scrubber, .error .loading{
+    display:none;
+}
+.error .error{
+    display:block;
+}
+.error .play-pause p{
+    cursor:auto;
+}
+.error .error-message{
+    display:block;
+}
+
+#audiojs_wrapper4,
+#audiojs_wrapper5,
+#audiojs_wrapper6 {
+	display: none;
+}

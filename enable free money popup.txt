@@ -1,0 +1,2 @@
+потрібно перейменувати файл index_call_me_popup.php 	в 	index.php
+для коректної роботи потрібна папка modalform
