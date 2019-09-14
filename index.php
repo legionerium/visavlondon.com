@@ -1013,7 +1013,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
                         <div class="inl01">
                             <h3>100</h3>
-                            <p>спортсменів виїхали 
+                            <p>спортсменів потрапили 
                                на змагання</p>
                         </div>
                         <div class="inl01 mar_mid">
@@ -1023,8 +1023,8 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                         </div>
                         <div class="inl01">
                             <h3>50</h3>
-                            <p>самотніх сердець зустрілись на побаченнях 
-                               і романтичних зустрічах</p>
+                            <p>самотніх сердець потрапили на побачення 
+                               і романтичні зустрічі</p>
                         </div>
                     </div>
                     <h3>Приймай вірне рішення</h3>
