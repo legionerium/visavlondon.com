@@ -555,6 +555,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             <div class="blc_02">
                 <div class="container">
                     <h2>Наші послуги</h2>
+                    <h3>Ми допомогли отримати візи більше 1000 львів'ян</h3>
                     <div class="f_icos">
                         <div class="pl_one pl_first">
                             <div class="img_wrap">
@@ -1012,7 +1013,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
                         <div class="inl01">
                             <h3>100</h3>
-                            <p>спортсменів потрапили 
+                            <p>спортсменів виїхали 
                                на змагання</p>
                         </div>
                         <div class="inl01 mar_mid">
@@ -1022,10 +1023,11 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                         </div>
                         <div class="inl01">
                             <h3>50</h3>
-                            <p>самотніх сердець потрапили на побачення 
-                               і романтичні зустрічі</p>
+                            <p>самотніх сердець зустрілись на побаченнях 
+                               і романтичних зустрічах</p>
                         </div>
                     </div>
+                    <h3>Приймай вірне рішення</h3>
                 </div>
             </div>
         </div>

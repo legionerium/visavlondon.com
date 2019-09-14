@@ -122,7 +122,6 @@ body{
     background:#aa240d;
     color:#fff;
 }
-
 .blue_btn{
     display: none;
     border-color: #252E40;
@@ -130,12 +129,10 @@ body{
     width: 220px;
     margin: 0 auto 30px;
 }
-
 .blue_btn:hover{
     background:#252E40;
     color:#fff;
 }
-
 .red_btn:before{
     content:'';
     position:absolute;
@@ -154,7 +151,7 @@ body{
     height:50px;
 }
 .blc01{
-    background:url("../img/bkr-image-ua.jpg") no-repeat center top;
+    background:url("../img/bg_lviv.png") no-repeat center top;
     padding:150px 0 0;
     margin-bottom:30px;
 }
@@ -220,12 +217,10 @@ input:-ms-input-placeholder{
 .wide_parall .thin{
     background:#fff;
 }
-
 .wide_parall {
 	background-repeat: no-repeat;
 	background-position: top center !important;
 }
-
 .wide_bot{
     margin-bottom:100px;
 }
@@ -250,14 +245,12 @@ input:-ms-input-placeholder{
     border-radius:0 5px 5px 0;
     border-right:2px solid #dfe2e9;
 }
-
 #inst_link a{
     display: flex;
     justify-content: center;
     font-style: italic;
     align-items: center;
 }
-
 #inst_link a p{
     font-size: 35px;
     font-weight: bold;
@@ -268,28 +261,23 @@ input:-ms-input-placeholder{
     width: 80px;
     height: auto;
 }
-
 .v_cost{
     clear: both;
     width: 75%;
     margin: 80px auto;
     text-align: center;
 }
-
 .v_cost h3{
     margin-bottom: 50px;
 }
-
 .v_cost h4{
     margin: 50px 0 10px;
     text-align: left;
     color: #c12800;
 }
-
 .v_cost ul{
     text-align: left;
 }
-
 .v_cost ul li{
     list-style:none;
     line-height: 25px; 
@@ -298,20 +286,14 @@ input:-ms-input-placeholder{
     font-size: 12px;
     font-style: italic;
 }
-
 .v_cost .items li:before{
    content:"";
     background:url(../img/chackmark.png);
     float:left;
     width:16px;
     height:16px;
-    margin-right:10px; 
+    margin-right:10px;
 }
-
-
-
-
-
 .wide_top{
     height:60px;
 }
@@ -327,6 +309,11 @@ input:-ms-input-placeholder{
 .blc_02{
     text-align:center;
     padding:80px 0 0;
+}
+.blc_02 .container h3{
+    font-style: italic;
+    margin-top: -30px;
+    margin-bottom: 30px;
 }
 .blc_02 h5{
     font-size:18px;
@@ -588,6 +575,10 @@ input:-ms-input-placeholder{
 }
 .blc_10{
     padding:90px 0 30px;
+}
+.blc_10 .container h3{
+    text-align: center;
+    font-size: 48px;
 }
 .inl01{
     vertical-align:top;
