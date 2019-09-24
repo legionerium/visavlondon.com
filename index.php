@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/audio.css">
-    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="inn-mailer/popup/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/audio.css">
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="inn-mailer/popup/style.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
-     <script src="fancybox/jquery.fancybox.js"></script>
-     <meta property="og:image" content="/img/bkr-image-without-title.jpg" />
-     <meta property="og:title" content="Вікно в Лондон" />
-     <meta property="og:description" content="Отримай візу у Великобританію без проблем!" />
-     <link rel="shortcut icon" href="/img/uk-flag.png" type="image/x-icon">
-    
-    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
+	<script src="fancybox/jquery.fancybox.js"></script>
+	<meta property="og:image" content="/img/bkr-image-without-title.jpg" />
+	<meta property="og:title" content="Вікно в Лондон" />
+	<meta property="og:description" content="Отримай візу у Великобританію без проблем!" />
+	<link rel="shortcut icon" href="/img/uk-flag.png" type="image/x-icon">
+	<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
+
+	<script src="js/jquery.scrollbar.js"></script>
+	<script type="text/javascript">
+      jQuery(document).ready(function(){
+          jQuery('.scrollbar-rail').scrollbar();
+      });
+  </script>
+
+
     <?php
 
     $lang = 'ru';
@@ -661,10 +669,55 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
           <ul>
             <li>Переклад документів від 60 грн/ст <span>(в залежності від типу документу)</span></li>
             <li>Консульський збір за туристичну візу 115€ <span>(інші типи віз уточняйте у менеджера)</span></li>
-          </ul>
+          </ul>          
         </div>
       </div>
     </div>
+    <div class="wide">
+      <div class="thin">
+      	<div class="video_feedback">
+      		<h2>Відео відгуки наших клієнтів</h2>
+      		<div class="video_feedback_items scrollbar-rail">
+	      		<div class="item">
+	      			<video autoplay muted loop preload="auto">
+	      				<source src="video/feedback_1.mp4">
+	      			</video>
+	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="text_feedback">відгук про поїздку в Шотландію</p>
+	      		</div>
+	      		<div class="item">
+	      			<video autoplay muted loop preload="auto">
+	      				<source src="video/feedback_2.mp4">
+	      			</video>
+	      			<p class="name">Олена,<span>2019</span></p>
+	      			<p class="text_feedback">відгук про поїздку з сином в Лондон</p>
+	      		</div>
+	      		<div class="item">
+	      			<video autoplay muted loop preload="auto">
+	      				<source src="video/feedback_3.mp4">
+	      			</video>
+	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
+	      		</div>
+	      		<div class="item">
+	      			<video autoplay muted loop preload="auto">
+	      				<source src="video/feedback_3.mp4">
+	      			</video>
+	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
+	      		</div>
+	      		<div class="item">
+	      			<video autoplay muted loop preload="auto">
+	      				<source src="video/feedback_3.mp4">
+	      			</video>
+	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
+	      		</div>      			
+      		</div>
+      		<p>гортай нище щоб прочитати більше відгуків</p>
+      	</div>
+      </div>
+     </div>
     <div class="wide">
       <div class="thin">
         <div class="bl02_in2" id="safety">
