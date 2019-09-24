@@ -191,3 +191,25 @@ $(document).ready(function () {
         myMap.geoObjects.add(myPlacemark).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4).add(myPolyline);
     }
 });
+
+window.addEventListener('load', function(){
+  var video = document.getElementsByClassName('item');
+  var video_pl = document.getElementsByTagName('video');
+  function show(){
+    this.pause();
+    this.currentTime = 0;
+    this.play();
+    if (this.muted == true){
+      this.muted = false;
+    }else{
+      this.muted = true;
+    }    
+  }
+  
+  for (var i = 0; i < video.length; i++) {
+    video[i].addEventListener('click', function(){
+      $(this).toggleClass('show_video');      
+    }, false)
+    video_pl[i].addEventListener('click', show, true)
+  }
+}, false)

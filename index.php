@@ -387,6 +387,9 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v4.0&appId=816244385111697&autoLogAppEvents=1"></script>
+
 <?php 
 		$path = "./clickfrogru_udp_tcp.php";
 		include_once($path);
@@ -452,7 +455,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                         <input name="form_position" value="header" type="hidden">
                         <input name="click_id" class="click_id" value="addReklamaActivity.php" type="hidden">
                         <input name="source_page_url" value="<?=$source_page_url?>" type="hidden">
-                        <input name="crm_type" value="0" type="hidden"><!--1-school/0-visa-->
+                        <input name="crm_type" value="0" type="hidden">
                         <input name="letter_type" value="visa" type="hidden">
                         <input name="letter_lang" value="ua" type="hidden">
                         <input name="letter_country" value="ua" type="hidden">
@@ -462,7 +465,6 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                         <input type="text" placeholder="Ім'я" required name="name" onclick="ga('send', 'event', 'Top_forma_Zayavka', 'click_name', 'top_Zayavka', { 'metric1': 10000});">
                         <input type="email" placeholder="Адреса електронної пошти" name="email" onclick="ga('send', 'event', 'Top_forma_Zayavka', 'click_email', 'top_Zayavka', { 'metric1': 10000});">
                         <input type="text" placeholder="Номер телефону" id="f_phone" required name="phone" onclick="ga('send', 'event', 'Top_forma_Zayavka', 'click_phone', 'top_Zayavka', { 'metric1': 10000});">
-                        <!--button type="submit" class="red_btn" onclick="ga('send', 'event', 'LP_top_zayavka', 'click_order_form', 'top_zayavka_zakaz_kons', { 'metric1': 100000});yaCounter42021279.reachGoal('zayavka_ya_goal');">Заказать консультацию</button-->
                         <input id="submit" name="submit" type="submit" class="red_btn" value="Замовити консультацію" onclick="ga('send', 'event', 'Top_forma_Zayavka', 'click_send', 'top_Zayavka', { 'metric1': 100000});">
                     </form>
                     <div id="send_request" class="modalDialog">
@@ -496,57 +498,8 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                   </div>
                 </div>
             </div>
-
-            <!--div class="top-rewievs">
-            <h2>Отзывы наших клиентов</h2>
-
-            <div class="video">
-
-            <div class="owl-carousel video-car" onclick="video_a_top()">
-                
-                            <iframe width="200" height="180" src="https://www.youtube.com/embed/id2iWbqBdAM?autoplay=1&mute=1&loop=1&playlist=id2iWbqBdAM" >
-</iframe>
-
-            </div>
-            <div class="owl-carousel video-car carousel2" >
-                            <div class="item-video item-video2" onclick="video_a_top()">
-                                <a class="owl-video" href="https://youtu.be/OIBpc4xcI_Q"></a>
-                            </div>         
-            </div>
-            <div class="owl-carousel video-car carousel3" >
-                            <div class="item-video item-video3" onclick="video_a_top()">
-                                <a class="owl-video" href="https://youtu.be/8GfIh9KrUhQ"></a>
-                            </div>         
-            </div>
-
-        </div>
-
-        <div class="video-mobile">
-            <div class="inl_02">
-                        
-                        <div class="owl-carousel video-car">
-                            <div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/8GfIh9KrUhQ" onclick="video_a_top()"></a>
-                            </div>
-                            <div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/OIBpc4xcI_Q" onclick="video_a_top()"></a>
-                            </div>
-                                                        <div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/mwULBD53yww" onclick="video_a_top()"></a>
-                            </div>
-                            <div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/id2iWbqBdAM" onclick="video_a_top()"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-nav"><div class="owl-prev disabled"></div><div class="owl-next"></div></div>
-        </div>
-            <input type="button" class="more-reviews" name="more" value="Больше отзывов" data-link="#testims">
-            </div-->
         </div>
     </div>
-
-
     <div id="inst_link">
       <a href="https://www.instagram.com/vikno_v_london/" target="_blank">
         <p>Обов'язково зазирніть в наш Instagram</p>
@@ -677,48 +630,93 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
       <div class="thin">
       	<div class="video_feedback">
       		<h2>Відео відгуки наших клієнтів</h2>
-      		<div class="video_feedback_items scrollbar-rail">
+      		<div id="test" class="video_feedback_items scrollbar-rail">
 	      		<div class="item">
 	      			<video autoplay muted loop preload="auto">
-	      				<source src="video/feedback_1.mp4">
+                <source src="video/feedback_1.mp4">
 	      			</video>
-	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="name">Микола,<span> 2019</span></p>
 	      			<p class="text_feedback">відгук про поїздку в Шотландію</p>
+              <div class="fb-like" 
+                data-href="https://visavlondon.com/video/feedback_1.mp4/" 
+                data-width="200" 
+                data-layout="button_count" 
+                data-action="like" 
+                data-size="small" 
+                data-show-faces="true" 
+                data-share="true">                  
+              </div>
 	      		</div>
 	      		<div class="item">
 	      			<video autoplay muted loop preload="auto">
 	      				<source src="video/feedback_2.mp4">
 	      			</video>
-	      			<p class="name">Олена,<span>2019</span></p>
+	      			<p class="name">Олена,<span> 2019</span></p>
 	      			<p class="text_feedback">відгук про поїздку з сином в Лондон</p>
+              <div class="fb-like" 
+                data-href="https://visavlondon.com/video/feedback_2.mp4/" 
+                data-width="200" 
+                data-layout="button_count" 
+                data-action="like" 
+                data-size="small" 
+                data-show-faces="true" 
+                data-share="true">                  
+              </div>
 	      		</div>
 	      		<div class="item">
 	      			<video autoplay muted loop preload="auto">
 	      				<source src="video/feedback_3.mp4">
 	      			</video>
-	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="name">Микола,<span> 2019</span></p>
 	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
+              <div class="fb-like" 
+                data-href="https://visavlondon.com/video/feedback_3.mp4/" 
+                data-width="200" 
+                data-layout="button_count" 
+                data-action="like" 
+                data-size="small" 
+                data-show-faces="true" 
+                data-share="true">                  
+              </div>
 	      		</div>
 	      		<div class="item">
 	      			<video autoplay muted loop preload="auto">
 	      				<source src="video/feedback_3.mp4">
 	      			</video>
-	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="name">Микола,<span> 2019</span></p>
 	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
+              <div class="fb-like" 
+                data-href="https://visavlondon.com/" 
+                data-width="200" 
+                data-layout="button_count" 
+                data-action="like" 
+                data-size="small" 
+                data-show-faces="true" 
+                data-share="true">                  
+              </div>
 	      		</div>
 	      		<div class="item">
 	      			<video autoplay muted loop preload="auto">
 	      				<source src="video/feedback_3.mp4">
 	      			</video>
-	      			<p class="name">Микола,<span>2019</span></p>
+	      			<p class="name">Микола,<span> 2019</span></p>
 	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
-	      		</div>      			
+              <div class="fb-like" 
+                data-href="https://visavlondon.com/" 
+                data-width="200" 
+                data-layout="button_count" 
+                data-action="like" 
+                data-size="small" 
+                data-show-faces="true" 
+                data-share="true">                  
+              </div>
+	      		</div>
       		</div>
-      		<p>гортай нище щоб прочитати більше відгуків</p>
+      		<p>гортай нижче щоб прочитати більше відгуків</p>
       	</div>
       </div>
      </div>
-    <div class="wide">
+    <div class="wide wide_back">
       <div class="thin">
         <div class="bl02_in2" id="safety">
             <h2>Надійність</h2>
@@ -735,7 +733,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
       </div>
       
     </div>
-    <div class="wide wide_back" id="all-simply">
+    <div class="wide" id="all-simply">
         <div class="thin">
             <div class="blc_03">
                 <div class="container">
@@ -795,7 +793,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             Замовити візу
         </div>
     </div>
-    <div class="wide wide_parall" data-parallax="scroll" data-image-src="img/par_bg.jpg">
+    <div class="wide wide_back" data-parallax="scroll" data-image-src="img/par_bg.jpg">
         <div class="thin">
             <div class="container">
                 <div class="blc_04">
@@ -808,7 +806,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             </div>
         </div>
     </div>
-    <div class="wide wide_back">
+    <div class="wide">
         <div class="thin">
             <div class="blc_05">
                 <h2>Спеціальна пропозиція</h2>
@@ -838,7 +836,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             Скористатися пропозицією
         </div>
     </div>
-    <div class="wide wide_parall" data-parallax="scroll" data-image-src="img/par_bg.jpg">
+    <div class="wide wide_back" data-parallax="scroll" data-image-src="img/par_bg.jpg">
         <div class="thin">
             <div class="container" id="not-risk">
                 <div class="blc_07">
@@ -882,7 +880,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             </div>
         </div>
     </div>
-    <div class="wide wide_back">
+    <div class="wide">
         <div class="thin">
             <div class="blc_08" id="about">
                 <h2>Наша компанія</h2>
@@ -949,7 +947,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             Відвідати Великобританію без проблем
         </div>
     </div>
-    <div class="wide wide_parall" data-parallax="scroll" data-image-src="img/par_bg.jpg">
+    <div class="wide wide_back" data-parallax="scroll" data-image-src="img/par_bg.jpg">
         <div class="thin">
             <div class="blc_02 blc_02_1" id="price">
                 <div class="container">
@@ -1042,7 +1040,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             </div>
         </div>
     </div>
-    <div class="wide wide_back">
+    <div class="wide">
         <div class="thin">
             <div class="blc_10">
                 <div class="container">
@@ -1085,79 +1083,11 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             </div>
         </div>
     </div>
-    <div class="wide wide_parall" data-parallax="scroll" data-image-src="img/par_bg.jpg">
+    <div class="wide wide_back" data-parallax="scroll" data-image-src="img/par_bg.jpg">
         <div class="thin">
             <div class="blc_11" id="testims" style="padding-bottom: 0px;">
                 <div class="container">
-                    <h2>Відгуки</h2>
-					<!--div class="abs_trig_wrap blc_09">
-						<div class="trigger review9" data-title="Здесь размещены видео, аудио и письменные озывы наших клиентов которым мы помогли оформить визу в Англию в кратчайшие сроки">
-							Здесь размещены видео, аудио и письменные озывы наших клиентов которым мы помогли оформить визу в Англию в кратчайшие сроки
-						</div>
-					</div-->                    
-					<!--div class="inl_02">
-                        <div class="blue_square">просмотреть</div>
-                        <div class="owl-carousel video-car" onclick="video_a_bottom()">
-                            <div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/8GfIh9KrUhQ"></a>
-                            </div>
-                            <div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/OIBpc4xcI_Q"></a>
-                            </div>
-														<div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/mwULBD53yww"></a>
-                            </div>
-                            <div class="item-video">
-                                <a class="owl-video" href="https://youtu.be/id2iWbqBdAM"></a>
-                            </div>
-                        </div>
-                    </div-->
-                    <!--div class="inl_02">
-                        <div class="blue_square">прослушать</div>
-                        <div class="owl-carousel audio-car">
-                            <div class="audio_wrap">
-                                <div class="aw1">
-                                    <div>
-                                        <img src="img/ava_m.png" alt="" class="ava_m">
-                                    </div>
-                                    <div>
-                                        <audio src="audio/tes01.WAV"></audio>
-                                        <p class="mar_t10">Михаил Суханский, студенческая виза</p>
-                                    </div>
-                                </div>
-                                <div class="aw1">
-                                    <div>
-                                        <img src="img/ava_f.png" alt="" class="ava_f">
-                                    </div>
-                                    <div>
-                                        <audio src="audio/tes02.WAV"></audio>
-                                        <p class="mar_t10">Марина Швецова, туристическая виза</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="audio_wrap">
-                                <div class="aw1">
-                                    <div>
-                                        <img src="img/ava_m.png" alt="" class="ava_m">
-                                    </div>
-                                    <div>
-                                        <audio src="audio/tes03wav.wav">
-                                        </audio>
-                                        <p class="mar_t10">Владимир Ливанов, студенческая виза</p>
-                                    </div>
-                                </div>
-                                <div class="aw1">
-                                    <div>
-                                        <img src="img/ava_f.png" alt="" class="ava_f">
-                                    </div>
-                                    <div>
-                                        <audio src="audio/tes04.WAV"></audio>
-                                        <p class="mar_t10">Александр Новиков, туристическая виза</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div-->
+                    <h2>Відгуки</h2>					
                 </div>
             </div>
         </div>
@@ -1438,7 +1368,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             Залишити заявку
         </div>
     </div>
-    <div class="wide wide_parall" data-parallax="scroll" data-image-src="img/par_bg.jpg">
+    <div class="wide" data-parallax="scroll" data-image-src="img/par_bg.jpg">
         <div class="thin">
             <div class="blc_13" id="team">
                 <div class="container">
@@ -1497,7 +1427,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             </div>
         </div>
     </div-->
-    <!--div class="wide wide_parall" data-parallax="scroll" data-image-src="img/par_bg.jpg">
+    <!--div class="wide" data-parallax="scroll" data-image-src="img/par_bg.jpg">
         <div class="thin">
             <div class="blc_15">
                 <div class="container">
@@ -1521,7 +1451,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             </div>
         </div>
     </div-->
-    <div class="wide wide_back_map">
+    <div class="wide">
         <div class="thin">
             <div class="blc_16" id="address"> 
                 <div class="blue_square">Наша адреса: Львів, площа Генерала Григоренка 5, +38 (032) 236-71-12</div>

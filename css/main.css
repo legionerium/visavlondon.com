@@ -214,13 +214,13 @@ input:-ms-input-placeholder{
 .wide_top .thin{
     margin-top:25px;
 }
-.wide_parall .thin{
+/*.wide_parall .thin{
     background:#fff;
 }
 .wide_parall {
 	background-repeat: no-repeat;
 	background-position: top center !important;
-}
+}*/
 .wide_bot{
     margin-bottom:100px;
 }
@@ -296,6 +296,12 @@ input:-ms-input-placeholder{
 }
 .video_feedback{
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.video_feedback>p{
+  font-size: 24px;
+  margin-top: 5%;
 }
 .video_feedback .video_feedback_items{
   width: 90%;
@@ -303,9 +309,56 @@ input:-ms-input-placeholder{
   overflow-x: scroll;
   margin: auto;
 }
-.video_feedback .video_feedback_items .item video{
-  width: 300px;
-  height: auto
+.video_feedback .video_feedback_items .item{
+  position: relative;
+  margin: 0 20px 40px;
+}
+.video_feedback .video_feedback_items .item.show_video{
+  position: fixed;
+  top: calc(50% - 150px);
+  left: calc(50% - 250px);
+  z-index: 999;
+
+}
+.video_feedback .video_feedback_items .item.show_video video{
+  width: 500px;
+  opacity: 1;
+}
+.video_feedback .video_feedback_items .item.show_video p{
+  display: none;
+}
+.video_feedback .video_feedback_items .item.show_video .fb_iframe_widget{
+  text-align: right;
+  display: inherit !important;
+}
+.video_feedback .video_feedback_items .item.show_video:before{
+  display: none;
+}
+.video_feedback .video_feedback_items .item:first-child{
+  margin-left: 0;
+}
+.video_feedback .video_feedback_items .item video{  
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  transition: all 0.2s linear;
+}
+.video_feedback .video_feedback_items .item video:hover{  
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.video_feedback .video_feedback_items .item:before{
+  position: absolute;
+  content: '';
+  background: url(../img/play_vid.png);
+  background-size: cover;
+  top: 18%;
+  left: 35%;
+  width: 50px;
+  height: 50px;
+  transition: all 0.2s linear
 }
 
 .wide_top{
@@ -352,18 +405,6 @@ input:-ms-input-placeholder{
 .trigger{
     cursor:pointer;
 }
-/* .trigger_wrap{
-    height:0;
-    transition:.2s;
-    overflow:hidden;
-} */
-/* .pl_one:hover .trigger_wrap{
-    height:111px;
-    padding:20px 0;
-}
-.pl_one:hover .price .sub{
-    height:auto;
-} */
 .blc_02 .red_btn{
     padding:12px 30px;
     margin: 30px 0;
@@ -1439,8 +1480,6 @@ div.price .newprice {
     color: red;
     display: inherit;
 }
-
-
 .top-rewievs .item-video{
     width: 300px;
 }
@@ -1452,20 +1491,6 @@ div.price .newprice {
         width: 320px;
     float: left;
 }
-
-/*.top-rewievs .carousel2 {
-        width: 320px;
-    float: left;
-}
-
-.top-rewievs .carousel3 {
-        width: 320px;
-    float: right;
-}*/
-
-
-
-
 .top-rewievs .more-reviews {
     border: 2px solid #bf2a11;
     color: #bf2a11;
@@ -1629,13 +1654,12 @@ width: 300px !important;
   height: 100%;
   left: 0;
   top: 0;
-  width: 100%;
+  width: calc(100% - 5px);
 }
  
 .scrollbar-rail > .scroll-element .scroll-element_size {
   background-color: unset;
   border: 1px solid #424242;
-  height: 1px !important;
 }
  
 .scrollbar-rail > .scroll-element.scroll-x {
@@ -1661,9 +1685,6 @@ width: 300px !important;
   background-color: #E1E1E1;
   width: 14px !important;
   height: 7px !important;
-  /*-webkit-border-radius: 2px;
-  -moz-border-radius: 2px;*/
-  /*border-radius: 5px;*/
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border: 1px solid #030303;
@@ -1699,10 +1720,10 @@ width: 300px !important;
 .scrollbar-rail > .scroll-element.scroll-y .scroll-bar { left: 1px; min-height: 10px; width: 10px; }
  
 .scrollbar-rail > .scroll-element.scroll-x .scroll-element_outer { height: 20px; left: 5px; }
-.scrollbar-rail > .scroll-element.scroll-x .scroll-element_size { height: 2px; left: -10px; top: 8px; }
+.scrollbar-rail > .scroll-element.scroll-x .scroll-element_size { height: 1px; left: 0px; top: 8px; }
  
 .scrollbar-rail > .scroll-element.scroll-y .scroll-element_outer { top: 5px; width: 15px; }
-.scrollbar-rail > .scroll-element.scroll-y .scroll-element_size { left: 5px; top: -10px; width: 2px; }
+.scrollbar-rail > .scroll-element.scroll-y .scroll-element_size { left: 0px; top: -10px; width: 1px; }
  
 /* update scrollbar offset if both scrolls are visible */
  
