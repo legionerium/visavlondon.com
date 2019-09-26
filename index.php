@@ -18,15 +18,7 @@
 	<link rel="shortcut icon" href="/img/uk-flag.png" type="image/x-icon">
 	<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
 
-	<script src="js/jquery.scrollbar.js"></script>
-	<script type="text/javascript">
-      jQuery(document).ready(function(){
-          jQuery('.scrollbar-rail').scrollbar();
-      });
-  </script>
-
-
-    <?php
+	  <?php
 
     $lang = 'ru';
     $source_page_url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
@@ -630,13 +622,13 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
       <div class="thin">
       	<div class="video_feedback">
       		<h2>Відео відгуки наших клієнтів</h2>
-      		<div id="test" class="video_feedback_items scrollbar-rail">
+      		<div id="test" class="video_feedback_items owl-carousel">
 	      		<div class="item">
 	      			<video autoplay muted loop preload="auto">
                 <source src="video/feedback_1.mp4">
 	      			</video>
-	      			<p class="name">Микола,<span> 2019</span></p>
-	      			<p class="text_feedback">відгук про поїздку в Шотландію</p>
+	      			<p class="name">Юлія,<span> 2019</span></p>
+	      			<p class="text_feedback">Відгук про поїздку в Лондон</p>
               <div class="fb-like" 
                 data-href="https://visavlondon.com/video/feedback_1.mp4/" 
                 data-width="200" 
@@ -644,15 +636,15 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                 data-action="like" 
                 data-size="small" 
                 data-show-faces="true" 
-                data-share="true">                  
+                data-share="false">                  
               </div>
 	      		</div>
 	      		<div class="item">
 	      			<video autoplay muted loop preload="auto">
 	      				<source src="video/feedback_2.mp4">
 	      			</video>
-	      			<p class="name">Олена,<span> 2019</span></p>
-	      			<p class="text_feedback">відгук про поїздку з сином в Лондон</p>
+	      			<p class="name">Оксана,<span> 2019</span></p>
+	      			<p class="text_feedback">Відгук про поїздку з сином в Лондон</p>
               <div class="fb-like" 
                 data-href="https://visavlondon.com/video/feedback_2.mp4/" 
                 data-width="200" 
@@ -660,7 +652,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                 data-action="like" 
                 data-size="small" 
                 data-show-faces="true" 
-                data-share="true">                  
+                data-share="false">                  
               </div>
 	      		</div>
 	      		<div class="item">
@@ -668,7 +660,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 	      				<source src="video/feedback_3.mp4">
 	      			</video>
 	      			<p class="name">Микола,<span> 2019</span></p>
-	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
+	      			<p class="text_feedback">Відгук про поїздку в Шотландію</p>
               <div class="fb-like" 
                 data-href="https://visavlondon.com/video/feedback_3.mp4/" 
                 data-width="200" 
@@ -676,39 +668,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                 data-action="like" 
                 data-size="small" 
                 data-show-faces="true" 
-                data-share="true">                  
-              </div>
-	      		</div>
-	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-	      				<source src="video/feedback_3.mp4">
-	      			</video>
-	      			<p class="name">Микола,<span> 2019</span></p>
-	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
-              <div class="fb-like" 
-                data-href="https://visavlondon.com/" 
-                data-width="200" 
-                data-layout="button_count" 
-                data-action="like" 
-                data-size="small" 
-                data-show-faces="true" 
-                data-share="true">                  
-              </div>
-	      		</div>
-	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-	      				<source src="video/feedback_3.mp4">
-	      			</video>
-	      			<p class="name">Микола,<span> 2019</span></p>
-	      			<p class="text_feedback">відгук про поїздку в Лондон</p>
-              <div class="fb-like" 
-                data-href="https://visavlondon.com/" 
-                data-width="200" 
-                data-layout="button_count" 
-                data-action="like" 
-                data-size="small" 
-                data-show-faces="true" 
-                data-share="true">                  
+                data-share="false">                  
               </div>
 	      		</div>
       		</div>
@@ -1600,6 +1560,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             <p>В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней.</p>
         </div>
     </div>
+    <div class="modal_feedback_video"></div>
 </div>
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
