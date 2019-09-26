@@ -59,7 +59,7 @@ jQuery(function ($) {
             items: 1,
             center: true,
             startPosition:2,
-        });
+        });        
         $('.mod_car').removeClass('mod_car');
 
     });
@@ -202,13 +202,21 @@ $(document).ready(function () {
 window.addEventListener('load', function(){
   var video_item = document.getElementsByTagName('video');
   var modal_feedback_video = document.getElementsByClassName('modal_feedback_video')[0];        
-  var code = '<a class="close">×</a><video autoplay controls preload="auto"><source src="video/feedback_1.mp4"></video>'
+  var code = '<a class="close">×</a>'
   for (let i = 0; i < video_item.length; i++) {
-    video_item[i].addEventListener('click', function(){
+    video_item[i].addEventListener('click', function(e){
       modal_feedback_video.style.display = "block";
+      var cloneVideo = $(e.target).clone();
+      $(cloneVideo).attr('muted', 'false');
+      $(cloneVideo).attr('controls', 'controls');
+      $(modal_feedback_video).append(cloneVideo);
       $(modal_feedback_video).append(code);
-      var close = modal_feedback_video.children[0];
-
+      var cloneVideoNew = modal_feedback_video.children[0];
+      if (cloneVideoNew.muted == true){
+        cloneVideoNew.muted = false;
+      }
+      var close = modal_feedback_video.children[1];
+      
       close.addEventListener('click', function(){
         $(modal_feedback_video).empty();
         modal_feedback_video.style.display = "none";
@@ -216,3 +224,15 @@ window.addEventListener('load', function(){
     },false)
   }
 }, false)
+
+
+if(window.matchMedia('(max-width: 800px)').matches){
+  $('.video_feedback_items').owlCarousel({
+        nav: true,
+        navText: ["", ""],
+        dots: false,
+        items: 1,
+        loop:true
+    });
+}
+
