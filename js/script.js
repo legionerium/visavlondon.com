@@ -4,7 +4,15 @@ $(document).ready(function () {
         navText: ["", ""],
         dots: false,
         items: 2,
-        loop:true
+        loop:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            800:{
+                items:2
+            },
+        }
     });
     $('.video-car').owlCarousel({
         nav: true,
@@ -224,15 +232,3 @@ window.addEventListener('load', function(){
     },false)
   }
 }, false)
-
-
-if(window.matchMedia('(max-width: 800px)').matches){
-  $('.video_feedback_items').owlCarousel({
-        nav: true,
-        navText: ["", ""],
-        dots: false,
-        items: 1,
-        loop:true
-    });
-}
-

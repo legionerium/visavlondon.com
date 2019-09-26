@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="inn-mailer/popup/style.css">
-	<script src="js/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="css/media.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="fancybox/jquery.fancybox.js"></script>
 	<meta property="og:image" content="/img/bkr-image-without-title.jpg" />
 	<meta property="og:title" content="Вікно в Лондон" />
