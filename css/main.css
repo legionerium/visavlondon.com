@@ -1476,6 +1476,9 @@ select{
     }
 }
 @media screen and (max-width:450px){
+  .video_feedback .video_feedback_items .item video {
+    width: 300px;
+  }
    
     .blc_08 .inl_just > div.bg_sq{
         width:100%;
