@@ -12,6 +12,9 @@ $(document).ready(function () {
             800:{
                 items:2
             },
+            1800:{
+                items:3
+            },
         }
     });
     $('.video-car').owlCarousel({
