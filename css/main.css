@@ -39,7 +39,7 @@ body{
     clear:both;
 }
 .inl_just{
-    text-align:justify;
+  text-align:justify;
 }
 .inl_just > div{
     display:inline-block;
@@ -151,10 +151,31 @@ body{
     height:50px;
 }
 .blc01{
-    background:url("../img/bg_lviv.png") no-repeat center top;
-    padding:150px 0 0;
+    position: relative;
+    height: 27vw;
+    /*background:url("../img/bg_lviv.png") no-repeat center top;*/
+    padding: 8.27% 0 0;
     margin-bottom:30px;
 }
+.blc01 img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.blc01 .container{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+.blc01 .container .inl_just{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
 h1{
     font-size:48px;
     margin-bottom:15px;
@@ -168,10 +189,13 @@ h2{
     vertical-align:top;
 }
 .t_form_wr{
-    margin:40px 10px -20px 0;
-    border-radius:5px 5px 0 0;
-    background:#fff;
-    padding:30px;
+  margin:40px 10px -20px 0;
+  border-radius:5px 5px 0 0;
+  background:#fff;
+  padding:30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .t_form_wr h4{
     font-size:24px;
