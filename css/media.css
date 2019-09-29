@@ -55,6 +55,32 @@
 	}
 
 }
+@media screen and (max-width:1050px){
+	.t_form_wr{
+		position: initial;
+	}
+	.blc01{
+		background: url(../img/bg_lviv.png) no-repeat 70% top;
+		background-size: cover;
+		height: initial;
+	}
+	.blc01 .container{
+		position: initial;
+	}
+	.blc01 .container .inl_just{
+		position: initial;
+	}
+	.blc01 .inl_just .h1_wrap{
+		position: initial;
+	}
+	.blc01 img{
+		display: none;
+	}
+	.blc_15{
+		padding:150px 0 320px;
+		background:url(../img/passport.png) no-repeat right bottom / 80%;
+	}
+}
 @media screen and (max-width:1024px){
 	.modal_feedback_video video {
 		top: calc(50% - 170px);
@@ -63,12 +89,6 @@
 	.modal_feedback_video {
 		top: calc(50% - 172px);
 		left: calc(50% - 250px);
-	}
-}
-@media screen and (max-width:1050px){
-	.blc_15{
-		padding:150px 0 320px;
-		background:url(../img/passport.png) no-repeat right bottom / 80%;
 	}
 }
 @media screen and (max-width:1000px){
@@ -121,6 +141,21 @@
 	}
 	.blc_15{
 		padding:50px 0 320px;
+	}
+	.top-rewievs .video{
+		display: none;
+	}
+	.top-rewievs .video-mobile{
+		margin-bottom: 280px; 
+	}
+	.top-rewievs .inl_02 {
+		width: 320px;
+	}
+}
+
+@media (min-width: 1001px) {
+	.top-rewievs .video-mobile{
+		display: none!important;
 	}
 }
 @media screen and (max-width:900px){
@@ -465,23 +500,5 @@
 	}
 	.video_feedback .video_feedback_items .item video{
 		width: 250px;
-	}
-}
-
-@media (max-width: 1000px) {
-	.top-rewievs .video{
-		display: none;
-	}
-	.top-rewievs .video-mobile{
-		margin-bottom: 280px; 
-	}
-	.top-rewievs .inl_02 {
-		width: 320px;
-	}
-}
-
-@media (min-width: 1001px) {
-	.top-rewievs .video-mobile{
-		display: none!important;
 	}
 }
