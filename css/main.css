@@ -916,14 +916,18 @@ input:-ms-input-placeholder{
 .blc_16 .map_adress{
     margin-top: 58px;
     padding: 25px;
+    width: 40%;
 }
-.blc_16 .map_adress p a, .blc_16 .map_adress ul{
+.blc_16 .map_adress p a, .blc_16 .map_adress p a, .blc_16 .map_adress ul{
     text-align: left;
     font-size: 14px;
     margin-top: 25%;
     line-height: 35px;
 }
-.blc_16 .map_adress p a, .blc_16 .map_adress ul li{
+.blc_16 .map_adress .tel a, 
+.blc_16 .map_adress .tel a span, 
+.blc_16 .map_adress ul li,
+.blc_16 .blue_square span{
     color: #fff;
 }
 .blc_16 .map_adress .tel a{

@@ -1367,9 +1367,9 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
     <div class="wide">
         <div class="thin">
             <div class="blc_16" id="address"> 
-                <div class="blue_square">Наша адреса: Львів, площа Генерала Григоренка 5, ( біля університету Франка )</div>
+                <div class="blue_square">Наша адреса: Львів, <span>площа Генерала Григоренка 5, </span><span>( біля університету Франка )</span></div>
                 <div class="map_adress blue_square">
-                  <p class="tel"><a href="tel:+380322367112">телефонуйте: +38 (032) 236-71-12</a></p>
+                  <p class="tel"><a href="tel:+380322367112"><span>телефонуйте: </span>+38 (032) 236-71-12</a></p>
                   <ul>
                     <li>- більшість заявок обробляємо дистанційно</li>
                     <li>- можлива зустріч в любій точці міста</li>
