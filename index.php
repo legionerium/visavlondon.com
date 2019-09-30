@@ -517,7 +517,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                                 <img src="img/srv_ico1.png" alt="">
                             </div>
                             <div class="hd_space"></div>
-                            <h5 class="two_l visa-type-name">Туристична віза,<br> бізнес віза</h5>
+                            <h5 class="two_l visa-type-name">Туристична, бізнес<br>i гостьова віза</h5>
                             <div class="price">
                                 107€
                             </div>
@@ -622,7 +622,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
     </div>
     <div class="wide">
       <div class="thin">
-      	<div class="video_feedback">
+      	<div class="video_feedback" id="testims">
       		<h2>Відео відгуки наших клієнтів</h2>
       		<div id="test" class="video_feedback_items owl-carousel">
 	      		<div class="item">
@@ -674,7 +674,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
               </div>
 	      		</div>
       		</div>
-      		<p>гортай нижче щоб прочитати більше відгуків</p>
+      		<p class="red_btn" data-link="#feedback_text">Прочитати більше відгуків</p>
       	</div>
       </div>
      </div>
@@ -920,7 +920,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                                 <img src="img/srv_ico1.png" alt="">
                             </div>
                             <div class="hd_space"></div>
-                            <h5 class="two_l visa-type-name">Туристична віза,<br> бізнес віза</h5>
+                            <h5 class="two_l visa-type-name">Туристична, бізнес<br>i гостьова віза</h5>
                             <div class="price">
                                 107€
                             </div>
@@ -1047,7 +1047,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
     </div>
     <div class="wide wide_back" data-parallax="scroll" data-image-src="img/par_bg.jpg">
         <div class="thin">
-            <div class="blc_11" id="testims" style="padding-bottom: 0px;">
+            <div class="blc_11" id="feedback_text" style="padding-bottom: 0px;">
                 <div class="container">
                     <h2>Відгуки</h2>					
                 </div>
@@ -1059,7 +1059,6 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
             <div class="blc_12">
                 <div class="container_wide">
                     <div class="inb_12">
-                        <!-- <div class="blue_square">прочесть</div -->
                         <div class="owl-carousel text_car" id="testims1">
                             <div class="tes_one">
                                 <div class="aw1">
@@ -1310,6 +1309,13 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                                 </div>
                             </div>
                             <div class="tes_one">
+                              <div class="google_doc">
+                                <p>Залишилися сумніви?</p>
+                                <p>Переходь на Google документ зі всіма нашими відгуками</p>
+                                <a class="red_btn" href="https://docs.google.com/document/d/1yw8nn0cglr_fQXgisvG71d9gNgvClvYBWbHpC7on1hY/edit" target="_blank">Перейти</a>
+                              </div>
+                            </div>
+                            <div class="tes_one">
                               <div id="send_feedback">
                                 <form>
                                   <p>Додати відгук</p>
@@ -1322,6 +1328,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                         </div>
                     </div>
                 </div>
+              <p data-link="#testims" class="red_btn google_link_btn">Подивитися відео-відгуки</p>
             </div>
         </div>
     </div>
@@ -1356,67 +1363,20 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
                 </div>
             </div>
         </div>
-    </div>
-    <!--div class="wide wide_back">
-        <div class="thin">
-            <div class="blc_14">
-                <div class="container">
-                    <h2>Учредительные документы</h2>
-                    <div class="inl_just">
-                        <div>
-                            <a href="img/1-1.jpg" data-fancybox onclick="ga('send', 'event','LP_dokumenty','click','posmotret_dok_w1', { 'metric1': 1});">
-                                <div class="frame_after"></div>
-                                <div class="hov_over"></div>
-                                <img src="img/1.png" alt=""/>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="img/2-1.jpg" data-fancybox onclick="ga('send', 'event','LP_dokumenty','click','posmotret_dok_w2', { 'metric1': 1});">
-                                <div class="frame_after"></div>
-                                <div class="hov_over"></div>
-                                <img src="img/2.png" alt=""/>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="img/3-1.jpg" data-fancybox onclick="ga('send', 'event','LP_dokumenty','click','posmotret_dok_w3', { 'metric1': 1});">
-                                <div class="frame_after"></div>
-                                <div class="hov_over"></div>
-                                <img src="img/3.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div-->
-    <!--div class="wide" data-parallax="scroll" data-image-src="img/par_bg.jpg">
-        <div class="thin">
-            <div class="blc_15">
-                <div class="container">
-                    <div>
-                        <div class="blue_square">Так выглядит туристическая виза</div>
-                        <div class="pad_in">
-                            <p class="p18">
-                                Услуги агенства – 3 900 р.<br>
-                                Консульский сбор – $128<br>
-                                Время на открытие – 15 дней*
-                            </p>
-                            <p>* возможно ускоренное рассмотрение
-                               за дополнительную плату</p>
-
-                        </div>
-                        <div class="trigger red_btn" data-title="Получить такую же визу">
-                            Получить такую же визу
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div-->
+    </div>    
     <div class="wide">
         <div class="thin">
             <div class="blc_16" id="address"> 
-                <div class="blue_square">Наша адреса: Львів, площа Генерала Григоренка 5, +38 (032) 236-71-12</div>
+                <div class="blue_square">Наша адреса: Львів, площа Генерала Григоренка 5, ( біля університету Франка )</div>
+                <div class="map_adress blue_square">
+                  <p class="tel"><a href="tel:+380322367112">телефонуйте: +38 (032) 236-71-12</a></p>
+                  <ul>
+                    <li>- більшість заявок обробляємо дистанційно</li>
+                    <li>- можлива зустріч в любій точці міста</li>
+                    <li>- відвідування офісу за бажанням</li>
+                    <li>- англійський чай з нас</li>
+                  </ul>
+                </div>
                 <div class="map_wrapper">
                     <div id="map">
                       <iframe style="margin-top: 58px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.027812062566!2d24.020896015128777!3d49.841934938904764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add73d11b4b45%3A0xc85cc1781d3c29d7!2z0L_Quy4g0JPQtdC90LXRgNCw0LvQsCDQk9GA0LjQs9C-0YDQtdC90LrQviwgNSwg0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1566941413080!5m2!1sru!2sua" width="100%" height="445px" frameborder="0" style="border:0" allowfullscreen></iframe>
