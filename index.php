@@ -630,7 +630,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 	      			</video>
 	      			<p class="name">Юлія,<span> 2019</span></p>
 	      			<p class="text_feedback">Відгук про поїздку в Лондон</p>
-              <a class="fb_link" href="">Подобається <span>496</span></a>
+              <a class="fb_link" href="">Подобається <span>496</span></a>              
 	      		</div>
 	      		<div class="item">
 	      			<video autoplay muted loop>
