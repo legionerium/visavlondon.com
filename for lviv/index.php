@@ -428,7 +428,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
         </div>
     </div>
     <div class="blc01">
-      <img src="img/bg_lviv.png">
+      <img src="img/bg_lviv.jpg">
         <div class="container">
             <div class="inl_just">
                 <div class="h1_wrap">
@@ -626,8 +626,9 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
       		<h2>Відео відгуки наших клієнтів</h2>
       		<div id="test" class="video_feedback_items owl-carousel">
 	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-                <source src="video/feedback_1.mp4">
+	      			<video autoplay muted loop>
+                <source src="video/mp4/feedback_1.mp4" type="video/mp4">
+                <source src="video/webm/feedback_1.webm" type="video/webm">
 	      			</video>
 	      			<p class="name">Юлія,<span> 2019</span></p>
 	      			<p class="text_feedback">Відгук про поїздку в Лондон</p>
@@ -642,8 +643,9 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
               </div>
 	      		</div>
 	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-	      				<source src="video/feedback_2.mp4">
+	      			<video autoplay muted loop>
+	      				<source src="video/mp4/feedback_2.mp4" type="video/mp4">
+                <source src="video/webm/feedback_2.webm" type="video/webm">
 	      			</video>
 	      			<p class="name">Оксана,<span> 2019</span></p>
 	      			<p class="text_feedback">Відгук про поїздку з сином в Лондон</p>
@@ -658,8 +660,9 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
               </div>
 	      		</div>
 	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-	      				<source src="video/feedback_3.mp4">
+	      			<video autoplay muted loop>
+	      				<source src="video/mp4/feedback_3.mp4" type="video/mp4">
+                <source src="video/webm/feedback_3.webm" type="video/webm">
 	      			</video>
 	      			<p class="name">Микола,<span> 2019</span></p>
 	      			<p class="text_feedback">Відгук про поїздку в Шотландію</p>

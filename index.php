@@ -6,12 +6,11 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
-  <link rel="stylesheet" href="css/audio.css">
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="inn-mailer/popup/style.css">
   <link rel="stylesheet" href="css/media.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
 	<script src="fancybox/jquery.fancybox.js"></script>
 	<meta property="og:image" content="/img/bkr-image-without-title.jpg" />
 	<meta property="og:title" content="Вікно в Лондон" />
@@ -379,7 +378,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
 
 </head>
-<body>
+<body>  
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v4.0&appId=816244385111697&autoLogAppEvents=1"></script>
 
@@ -428,7 +427,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
         </div>
     </div>
     <div class="blc01">
-      <img src="img/bkr-image-ua.jpg">
+      <img src="img/bg_ua.jpg">
         <div class="container">
             <div class="inl_just">
                 <div class="h1_wrap">
@@ -625,52 +624,31 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
       		<h2>Відео відгуки наших клієнтів</h2>
       		<div id="test" class="video_feedback_items owl-carousel">
 	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-                <source src="video/feedback_1.mp4">
+	      			<video autoplay muted loop>
+                <source src="video/mp4/feedback_1.mp4" type="video/mp4">
+                <source src="video/webm/feedback_1.webm" type="video/webm">
 	      			</video>
 	      			<p class="name">Юлія,<span> 2019</span></p>
 	      			<p class="text_feedback">Відгук про поїздку в Лондон</p>
-              <div class="fb-like" 
-                data-href="https://visavlondon.com/video/feedback_1.mp4/" 
-                data-width="200" 
-                data-layout="button_count" 
-                data-action="like" 
-                data-size="small" 
-                data-show-faces="true" 
-                data-share="false">                  
-              </div>
+              <a class="fb_link" href="">Подобається <span>496</span></a>
 	      		</div>
 	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-	      				<source src="video/feedback_2.mp4">
+	      			<video autoplay muted loop>
+	      				<source src="video/mp4/feedback_2.mp4" type="video/mp4">
+                <source src="video/webm/feedback_2.webm" type="video/webm">
 	      			</video>
 	      			<p class="name">Оксана,<span> 2019</span></p>
 	      			<p class="text_feedback">Відгук про поїздку з сином в Лондон</p>
-              <div class="fb-like" 
-                data-href="https://visavlondon.com/video/feedback_2.mp4/" 
-                data-width="200" 
-                data-layout="button_count" 
-                data-action="like" 
-                data-size="small" 
-                data-show-faces="true" 
-                data-share="false">                  
-              </div>
+              <a class="fb_link" href="">Подобається <span>762</span></a>
 	      		</div>
 	      		<div class="item">
-	      			<video autoplay muted loop preload="auto">
-	      				<source src="video/feedback_3.mp4">
+	      			<video autoplay muted loop>
+	      				<source src="video/mp4/feedback_3.mp4" type="video/mp4">
+                <source src="video/webm/feedback_3.webm" type="video/webm">
 	      			</video>
 	      			<p class="name">Микола,<span> 2019</span></p>
 	      			<p class="text_feedback">Відгук про поїздку в Шотландію</p>
-              <div class="fb-like" 
-                data-href="https://visavlondon.com/video/feedback_3.mp4/" 
-                data-width="200" 
-                data-layout="button_count" 
-                data-action="like" 
-                data-size="small" 
-                data-show-faces="true" 
-                data-share="false">                  
-              </div>
+              <a class="fb_link" href="">Подобається <span>589</span></a>
 	      		</div>
       		</div>
       		<p class="red_btn" data-link="#feedback_text">Прочитати більше відгуків</p>
@@ -1529,7 +1507,6 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 <script src="js/sticky-header.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/audio.min.js"></script>
-
 <script src="js/script.js"></script>
 
 <!-- Begin LeadBack code {literal} 

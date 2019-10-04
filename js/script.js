@@ -222,7 +222,7 @@ window.addEventListener('load', function(){
       $(cloneVideo).attr('controls', 'controls');
       $(modal_feedback_video).append(cloneVideo);
       $(modal_feedback_video).append(code);
-      var cloneVideoNew = modal_feedback_video.children[0];
+      var cloneVideoNew = modal_feedback_video.children[0];      
       if (cloneVideoNew.muted == true){
         cloneVideoNew.muted = false;
       }
@@ -235,3 +235,20 @@ window.addEventListener('load', function(){
     },false)
   }
 }, false)
+
+
+var fb_link = document.getElementsByClassName('fb_link');
+for (var i = 0; i < fb_link.length; i++) {
+  fb_link[i].addEventListener('click', function(event){
+    event.preventDefault();
+    var span = this.children[0].innerText;
+    span = parseInt(span);    
+    if (!this.classList.contains('active')) {
+      span +=1;
+    } else {
+      span -=1;
+    }
+    this.children[0].innerHTML = span;            
+    this.classList.toggle('active');
+  }, false)    
+}
